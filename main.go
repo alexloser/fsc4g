@@ -12,9 +12,9 @@ func init() {
 
 func main() {
 	if len(os.Args) != 3 && len(os.Args) != 2 {
-		print("Usage:\n\t"+os.Args[0], "PATH REGEX")
-		print("\n\t"+os.Args[0], os.Args[0], "PATH")
-		print("Example:\n\t"+os.Args[0], "/home/user/tmp \"^.*\\.txt$\"")
+		print("Usage:\n\t"+os.Args[0], "PATH")
+		print("\t"+os.Args[0], "PATH REGEX")
+		print("Example:\n\t"+os.Args[0], "/somewhere/tmp \"^.*\\.txt$\"")
 		os.Exit(-1)
 	}
 
