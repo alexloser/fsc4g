@@ -54,9 +54,9 @@ func (self PathWalker) format(parent string, f os.FileInfo) string {
 	}
 
 	if f.IsDir() {
-		return fmt.Sprintf("D %10.2f%s  %s", size, unit, filepath.Join(parent, f.Name()))
+		return fmt.Sprintf("D %9.2f%s  %s", size, unit, filepath.Join(parent, f.Name()))
 	} else {
-		return fmt.Sprintf("F %10.2f%s  %s", size, unit, filepath.Join(parent, f.Name()))
+		return fmt.Sprintf("F %9.2f%s  %s", size, unit, filepath.Join(parent, f.Name()))
 	}
 }
 
